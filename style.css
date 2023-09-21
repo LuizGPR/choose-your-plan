@@ -33,7 +33,6 @@ body{
 .main-navigation-list-link li{
     list-style: none;
 }
-
 .main-navigation-link{
     display: flex;
     text-decoration: none;
@@ -49,6 +48,7 @@ body{
     text-decoration: underline;
 }
 
+
 .main-title{
     text-align: center;
     margin: 48px;
@@ -63,7 +63,6 @@ body{
     justify-content: space-evenly;
     gap: 22px;
 }
-
 .plans{
     display: flex;
     flex-direction: column;
@@ -82,6 +81,7 @@ body{
     border: 1px solid;
     color: #CBE200;
 }
+
 .benefits-list{
     flex-grow: 1;
     display: flex;
@@ -89,7 +89,6 @@ body{
     gap: 10px;
     margin-top: 20px;
 }
-
 .benefit{
     list-style: inside;
     color: #B3B5B7;
@@ -97,6 +96,7 @@ body{
 .benefit::marker{
     color: #CBE200;
 }
+
 .price-value{
     font-size: 28px;
 }
