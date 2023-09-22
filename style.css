@@ -56,6 +56,11 @@ body{
     border-radius: 8px;
     padding: 16px 20px;
 }
+a.header__nav--active{
+    background-color: #CBE200;
+    color: #000;
+}
+
 .main-navigation-link:hover{
     background-color: #CBE200;
     color: #000;
