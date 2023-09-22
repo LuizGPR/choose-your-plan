@@ -28,16 +28,23 @@ body{
     text-transform: uppercase;
     align-self: center;
 }
-@media (max-width: 600px) {
-    .main-header-title{
-        font-size: 28px;
-    }
-}
 .main-navigation-list-link{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
+}
+@media (max-width: 600px) {
+    .main-header-title{
+        font-size: 28px;
+    }
+    .main-header-page{
+        justify-content: space-evenly;
+    }
+    .main-navigation-list-link{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .main-navigation-list-link li{
     list-style: none;
@@ -125,6 +132,9 @@ body{
 }
 .sign-in:hover{
     box-shadow: 0 0 10px #CBE200;
+}
+.sign-in:active{
+    text-decoration: underline;
 }
 
 ::selection{
