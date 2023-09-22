@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: .3s;
 }
 body{
     background-color: #0C1013;
@@ -11,23 +12,31 @@ body{
 }
 
 .main-header-page{
-    width: 975px;
-    height: 80px;
+    width: 100%;
+    max-width: 975px;
+    height: fit-content;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 8px 28px;
+    gap: 6px;
     background-color: #050709;
 }
 
 .main-header-title{
     font-size: 36px;
     text-transform: uppercase;
+    align-self: center;
 }
-
+@media (max-width: 600px) {
+    .main-header-title{
+        font-size: 28px;
+    }
+}
 .main-navigation-list-link{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 8px;
 }
 .main-navigation-list-link li{
@@ -51,15 +60,17 @@ body{
 
 .main-title{
     text-align: center;
-    margin: 48px;
+    margin: 48px 0;
     font-size: 48px;
     text-transform: uppercase;
 }
 
 .plans-container{
     display: flex;
-    width: 975px;
-    margin: auto;
+    width: 100%;
+    max-width: 975px;
+    flex-wrap: wrap;
+    margin: auto auto 20px;
     justify-content: space-evenly;
     gap: 22px;
 }
@@ -111,4 +122,14 @@ body{
     margin-top: 32px;
     border-radius: 6px;
     font-weight: 900;
+}
+.sign-in:hover{
+    box-shadow: 0 0 10px #CBE200;
+}
+
+::selection{
+    background-color: #8100E3;
+}
+.benefit::selection,.sign-in::selection{
+    color:white;
 }
