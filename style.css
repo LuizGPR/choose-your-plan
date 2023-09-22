@@ -59,6 +59,7 @@ body{
 a.header__nav--active{
     background-color: #CBE200;
     color: #000;
+    pointer-events: none;
 }
 
 .main-navigation-link:hover{
@@ -90,6 +91,7 @@ a.header__nav--active{
     display: flex;
     flex-direction: column;
     width: 300px;
+    flex-grow: 1;
     padding: 25px;
     border-radius: 10px;
     background-color: #20262C;
@@ -97,6 +99,7 @@ a.header__nav--active{
 .plans h2{
     text-transform: uppercase;
     font-size: 32px;
+    letter-spacing: 3px;
 }
 
 .horizontal-line{
@@ -114,7 +117,7 @@ a.header__nav--active{
 }
 .benefit{
     list-style: inside;
-    color: #B3B5B7;
+    color: #B5B5B5;
 }
 .benefit::marker{
     color: #CBE200;
@@ -134,12 +137,16 @@ a.header__nav--active{
     margin-top: 32px;
     border-radius: 6px;
     font-weight: 900;
+    transition: .2s;
 }
 .sign-in:hover{
     box-shadow: 0 0 10px #CBE200;
 }
 .sign-in:active{
+    transition: 0s;
     text-decoration: underline;
+    background-color: #8100E3;
+    box-shadow: 0 0 10px #8100E3;
 }
 
 ::selection{
